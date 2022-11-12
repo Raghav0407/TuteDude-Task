@@ -1,0 +1,96 @@
+
+.referralCode {
+    position: relative;
+    width: max-content;
+    padding: 20px 75px;
+    letter-spacing: 15px;
+  }
+  .referralCode::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: var(--gradient1);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .dashboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10rem;
+  }
+  .dashboard > .wallet2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    box-shadow: 0 0 10px #ddd;
+    height: 148px;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .wallet2:first-child {
+    color: var(--purple);
+  }
+  .amount {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--black);
+  }
+  .withdraw {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .withdraw > a {
+    width: max-content;
+    border-radius: 20px;
+    text-align: center;
+    color: white !important;
+    padding: 8px 12px;
+    background-color: var(--purple);
+  }
+  
+  .dashboard > .referal {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .referal > div {
+    color: var(--purple);
+  }
+  @media screen and (max-width: 1200px) {
+    .dashboard {
+      gap: 5rem;
+    }
+    .referralCode {
+      padding: 20px 60px;
+      letter-spacing: 10px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .withdraw {
+      grid-column: auto;
+    }
+    .dashboard > .wallet2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  

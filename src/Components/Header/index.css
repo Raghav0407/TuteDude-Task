@@ -1,0 +1,39 @@
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--purple);
+  }
+  .profile {
+    font-weight: 600;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+  }
+  @media screen and (max-width: 600px) {
+    .orderList > li:nth-child(-n + 2) {
+      display: none;
+    }
+    .orderList > li:nth-child(3) {
+      background-color: var(--purple);
+      color: white !important;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+    .profleSvg {
+      fill: white;
+    }
+    .header {
+      margin: 0 1.5rem;
+    }
+  }
+  
+  
+  
+  
