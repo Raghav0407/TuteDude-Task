@@ -1,4 +1,3 @@
-
 import React from "react";
 
 function Navbar() {
@@ -40,6 +39,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-

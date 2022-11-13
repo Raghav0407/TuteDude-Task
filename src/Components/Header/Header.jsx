@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./Navbar";
 import logo from "../../assests/logo.svg";
@@ -17,4 +16,3 @@ function Header() {
 }
 
 export default Header;
-
